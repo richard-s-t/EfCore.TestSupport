@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C55A29E-0918-404D-B877-9C11D2327A82}"
 	ProjectSection(SolutionItems) = preProject
+		EfCoreTestSupportNuGetIcon128.png = EfCoreTestSupportNuGetIcon128.png
 		LICENSE = LICENSE
 		README.md = README.md
 		ReleaseNotes.md = ReleaseNotes.md
@@ -17,9 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Version5UpgradeDocs.md = Version5UpgradeDocs.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSupport", "TestSupport\TestSupport.csproj", "{0CB1A11C-6144-414D-81A9-F880DEB2C71A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSupport.Core", "TestSupport.Core\TestSupport.Core.csproj", "{0CB1A11C-6144-414D-81A9-F880DEB2C71A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFromSqlRaw", "TestFromSqlRaw\TestFromSqlRaw.csproj", "{AADA2740-B6C5-4915-8705-4AD3B40F00D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSupport", "TestSupport\TestSupport.csproj", "{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +118,26 @@ Global
 		{AADA2740-B6C5-4915-8705-4AD3B40F00D8}.Release|x64.Build.0 = Release|Any CPU
 		{AADA2740-B6C5-4915-8705-4AD3B40F00D8}.Release|x86.ActiveCfg = Release|Any CPU
 		{AADA2740-B6C5-4915-8705-4AD3B40F00D8}.Release|x86.Build.0 = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|ARM.Build.0 = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|x64.Build.0 = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Debug|x86.Build.0 = Debug|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|ARM.Build.0 = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|ARM64.Build.0 = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|x64.ActiveCfg = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|x64.Build.0 = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|x86.ActiveCfg = Release|Any CPU
+		{F5273CD4-B5DE-4FCB-A623-F97514B4CC36}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
