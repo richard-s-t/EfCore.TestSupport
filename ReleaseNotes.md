@@ -1,5 +1,9 @@
 # Release notes
 
+## 10.1.0
+
+- BREAKING CHANGE: xunit-related abstractions moved into a separate package (`EfCore.TestSupport.xunit`). This enables to use the main package without dependencies on specific testing framework. If you use xunit-related features, add a reference to the new package. No code changes are required beyond adding the package reference.
+
 ## 10.0.0
 
 - .NET 10 version
@@ -119,9 +123,9 @@ These support EF Core 2.1, 3.0, and 3.1.
 
 ## 3.0.0
 
-- Support both EF Core >=2.1 and EF Core >=3.0 by supporting NetStandard2.0 and NetStandard2.1. 
+- Support both EF Core >=2.1 and EF Core >=3.0 by supporting NetStandard2.0 and NetStandard2.1.
 - Bug fix: GetAllErrors() in CompareEfSql should use Environment.NewLine. See issue #20.
-- Obsolete: Remove LogSetupHelper as obsolete, use `CreateOptionsWithLogging` for Sqlite and SQL Server. 
+- Obsolete: Remove LogSetupHelper as obsolete, use `CreateOptionsWithLogging` for Sqlite and SQL Server.
 
 ## 2.0.1
 
@@ -132,7 +136,7 @@ These support EF Core 2.1, 3.0, and 3.1.
 
 - BREAKING CHANGE: By default EfSchemaCompare to only scan the tables that the entity classes map to - see issue #18.
 - Improvement: EfSchemaCompare now has case insensitive table, schema, columns, etc. matching feature - see issues #9 and #19.
-- BREAKING CHANGE: In EfSchemaCompare missing indexes are now referred to by "index constraint name" instead of "constraint name" - this was done as part of case insensitivity 
+- BREAKING CHANGE: In EfSchemaCompare missing indexes are now referred to by "index constraint name" instead of "constraint name" - this was done as part of case insensitivity
 - Bug fix: EfSchemaCompare default SQL value handled improved, plus now sets the correct ValueGenerated - see issue #15
 - Bug fix: Fixed problem with serializing/deserializing DDD-styled entity classes.
 
@@ -146,15 +150,15 @@ These support EF Core 2.1, 3.0, and 3.1.
 - Feature: Added WipeCreateDatabase extension method - useful for creating empty database prior to using SQL to add tables etc.
 
 ## 1.7.0
-- Feature: Added DecodeMessage feature to LogOutput. Tries to recreate the actual SQL to allow cut/paste 
+- Feature: Added DecodeMessage feature to LogOutput. Tries to recreate the actual SQL to allow cut/paste
 - Bug fix: Minor format error in ToString of LogOutput - adds an unwanted comma after log type if used for non-EF Core logs.
 
-## 1.6.1 
+## 1.6.1
 - Bug fix: Added LogLevel to ...WithLogging versions of Sqlite/SQL server option builders.
-- 
+-
 ## 1.6.0
 - Feature. Added new way to capture EF Core logging output, which is superior to the existing SetupLogging method. See EfCore.TestSupport Wiki page "Capture EF Core logging".
-- Bug fix: SetupLogging is now marked as obsolete, but not removed so that existing unit tests don't break. 
+- Bug fix: SetupLogging is now marked as obsolete, but not removed so that existing unit tests don't break.
 
 ## 1.5.2
 - Bug fix: CompareEfSql no longer fails when there there isn't a primary key in a DbQuery - issue #8

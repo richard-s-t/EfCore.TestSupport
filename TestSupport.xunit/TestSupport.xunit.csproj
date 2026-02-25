@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="xunit.assert" Version="2.9.3" />
+        <PackageReference Include="xunit.core" Version="2.9.3" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <PackageId>EfCore.TestSupport.xunit</PackageId>
+        <PackageVersion>10.1.0</PackageVersion>
+        <Version>10.1.0</Version>
+        <Authors>Jon P Smith</Authors>
+        <Description>Collection of xUnit-specific helpers for the main EfCore.TestSupport library. See readme file on github.</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReleaseNotes>
+            - .NET 10 version
+        </PackageReleaseNotes>
+        <Copyright>Copyright (c) 2020 Jon P Smith. Licenced under MIT licence</Copyright>
+        <PackageTags>Entity Framework Core, xUnit</PackageTags>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <ProjectUrl>https://github.com/JonPSmith/EfCore.TestSupport</ProjectUrl>
+        <RepositoryUrl>https://github.com/JonPSmith/EfCore.TestSupport</RepositoryUrl>
+        <PackageIcon>EfCoreTestSupportNuGetIcon128.png</PackageIcon>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../EfCoreTestSupportNuGetIcon128.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+</Project>
